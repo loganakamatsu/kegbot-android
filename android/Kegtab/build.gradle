@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+      classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+apply plugin: 'android'
+
+dependencies {
+    compile files('libs/GoogleAnalytics/libGoogleAnalyticsV2.jar')
+    compile files('libs/android-support-v13.jar')
+    compile files('libs/crashlytics.jar')
+    compile files('libs/guava/guava-11.0.2.jar')
+    compile files('libs/http-request/http-request-5.5.jar')
+    compile files('libs/jackson/jackson-core-asl-1.7.4.jar')
+    compile files('libs/jackson/jackson-mapper-asl-1.7.4.jar')
+    compile files('libs/joda-time-2.2/joda-time-2.2.jar')
+    compile files('libs/jscience/jscience-vm14.jar')
+    compile files('libs/jsr305/jsr305-1.3.7.jar')
+    compile files('libs/kegbot-api/kegbot-api.jar')
+    compile files('libs/okhttp/okhttp.jar')
+    compile files('libs/otto/square-otto-1.3.2.jar')
+    compile files('libs/protobuf/protobuf-java-2.5.0.jar')
+    compile files('libs/usb-serial-for-android/usb-serial-for-android.jar')
+    compile 'com.google.android.gms:play-services:4.0.30'
+    compile 'com.android.support:support-v4:18.0.+'
+    compile 'com.android.support:support-v13:18.0.+'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    packagingOptions {
+      exclude 'allclasses-frame.html'
+      exclude 'allclasses-noframe.html'
+      exclude 'constant-values.html'
+      exclude 'deprecated-list.html'
+      exclude 'META-INF/ASL2.0'
+      exclude 'META-INF/DEPENDENCIES'
+      exclude 'META-INF/NOTICE'
+      exclude 'META-INF/LICENSE'
+      exclude 'META-INF/LICENSE.txt'
+      exclude 'META-INF/NOTICE.txt'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}

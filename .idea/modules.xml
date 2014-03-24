@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android/GooglePlayServices/GooglePlayServices.iml" filepath="$PROJECT_DIR$/android/GooglePlayServices/GooglePlayServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/Kegtab/Kegtab.iml" filepath="$PROJECT_DIR$/android/Kegtab/Kegtab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/KegtabTests-JDK/KegtabTests-JDK.iml" filepath="$PROJECT_DIR$/android/KegtabTests-JDK/KegtabTests-JDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/ViewPagerIndicator/ViewPagerIndicator.iml" filepath="$PROJECT_DIR$/android/ViewPagerIndicator/ViewPagerIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kegbot-android.iml" filepath="$PROJECT_DIR$/kegbot-android.iml" />
+    </modules>
+  </component>
+</project>
+

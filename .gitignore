@@ -7,3 +7,6 @@ docs/build
 
 android/Kegtap/res/values/build_strings.xml
 android/Kegtap/src/org/kegbot/app/build/BuildInfo.java
+
+local.properties
+android/Kegtab/build/
