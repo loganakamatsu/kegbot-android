@@ -10,3 +10,4 @@ android/Kegtap/src/org/kegbot/app/build/BuildInfo.java
 
 local.properties
 android/Kegtab/build/
+*\.gradle*
