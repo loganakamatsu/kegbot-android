@@ -16,6 +16,11 @@
  * You should have received a copy of the GNU General Public License along
  * with Kegtab. If not, see <http://www.gnu.org/licenses/>.
  */
+allprojects {
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
 
 buildscript {
     repositories {
@@ -77,8 +82,7 @@ android {
 }
 
 dependencies {
-    //compile project(':usbSerialLibrary')
-    compile files('libs/usbSerialForAndroid.jar')
+    compile 'com.hoho.android:usb-serial-for-android:0.2.0-SNAPSHOT@aar'
     compile 'com.google.android.gms:play-services-gcm:7.0.0'
     compile files('libs/kegbot-api/kegbot-api.jar')
     compile 'com.android.support:support-v13:22.0.0'
