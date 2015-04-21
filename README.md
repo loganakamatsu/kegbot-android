@@ -3,33 +3,23 @@ Kegbot for Android
 
 Overview
 --------
-
-This is the source code for the Kegbot Android application!
+This is a fork of Kegbot For Android. You can (mostly) look at the closed pull requests
+for individual tweaks that have been made from the original. 
 
 Main repository: https://github.com/Kegbot/kegbot-android
-
-Home page: http://kegbot.org/
-
 
 Developers: Quick Setup Instructions
 ------------------------------------
 
-Bear with us as better develop documentation is coming!
-
-In the meantime, here are quick and dirty steps:
-
 - Clone the kegbot-android repo
-- Eclipse: Import -> Existing Projects into Workspace.
-- Import the projects (Kegtab, KegtabTest)
+- Android Studio: Import the project as a gradle project. See ``kegtab/build.gradle`` for sdk versions.
 
 Patches Welcome!
 ----------------
 
-Kegbot is open source; we'd love to have your patches to make it better.
-
-If you're considering adding something major, do get in touch with us in the
-forums or on #freenode to talk about it first; it should make the pull
-request go faster.
+Ideally we'll pick over the best changes into the main branch. Until then, feel free to build your own.
+I'll try to keep a pre-built copy of latest in the releases area but note that it is NOT offical kegbot and thus
+will not be able to be installed side-by-side because they share a packge name.
 
 License and Copyright
 ---------------------
