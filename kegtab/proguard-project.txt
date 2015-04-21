@@ -22,10 +22,6 @@
 -dontobfuscate
 -dontshrink
 
--libraryjars libs/GoogleAnalytics/libGoogleAnalyticsV2.jar
--libraryjars libs/jscience/jscience-vm14.jar
--libraryjars libs/kegbot-api/kegbot-api.jar
-
 -dontwarn net.sourceforge.retroweaver.runtime.java.**    # jscience
 -dontwarn com.google.common.**  # guava
 -dontwarn org.apache.commons.**  # httpcomponents-client

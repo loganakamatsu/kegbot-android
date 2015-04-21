@@ -59,7 +59,7 @@ android {
             minifyEnabled true
             debuggable false
             jniDebuggable false
-            ext.enableCrashlytics = true
+            ext.enableCrashlytics = false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
